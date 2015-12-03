@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[15]:
+# In[ ]:
 
 get_ipython().magic(u'matplotlib inline')
 import numpy as np
@@ -21,13 +21,13 @@ train_bow = np.load(fp("SIFTBoW_train.npy"))
 train_labels = np.genfromtxt(fp("train.txt"),dtype=None)
 train_filenames = train_labels[:,0]
 train_labels = train_labels[:,1]
-train_attribs = np.genfromtxt(fp("attributes_train.txt"),dtype=None)[:,1]
+train_attribs = np.array([map(float, line.split(',')) for line in np.genfromtxt(fp("attributes_train.txt"),dtype=None)[:,1]])
 
 # testing data
 test_cnn = np.load(fp("alexnet_feat_test.npy"))
 test_bow = np.load(fp("SIFTBoW_test.npy"))
 test_filenames = np.genfromtxt(fp("test.txt"),dtype=None)
-test_attribs = np.genfromtxt(fp("attributes_test.txt"),dtype=None)[:,1]
+test_attribs = np.array([map(float, line.split(',')) for line in np.genfromtxt(fp("attributes_test.txt"),dtype=None)[:,1]])
 
 # 10k data
 tenk_cnn = np.load(fp("alexnet_feat_10k.npy"))
@@ -89,7 +89,7 @@ def get_pca(data, count = 50):
     return pca.fit_transform(data)
 
 
-# In[16]:
+# In[33]:
 
 get_ipython().system(u'ipython nbconvert --to=python library.ipynb')
 
