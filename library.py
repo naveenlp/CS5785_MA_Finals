@@ -1,12 +1,14 @@
 
 # coding: utf-8
 
-# In[9]:
+# In[15]:
 
 get_ipython().magic(u'matplotlib inline')
 import numpy as np
 from PIL import Image
+from matplotlib import pyplot as plt
 import json
+from sklearn.decomposition import PCA
 
 # READ IN DATA AND STORE IN VARIABLES
 
@@ -38,7 +40,7 @@ with open(fp('captions.json')) as data_file:
 attribute_values = [line.rstrip().replace("'", "") for line in open(fp('attributes_list.txt'))]
 
 
-# In[10]:
+# In[12]:
 
 # HELPER METHODS
 def get_filename(index, datatype = "train"):
@@ -62,6 +64,17 @@ def display_image(filename, datatype = "train"):
     imt.thumbnail(size, Image.ANTIALIAS)
     return imt
 
+def display_image2(filename, datatype = "train"):
+    if((datatype == "train") or (datatype == "test")):
+        path = fp('images/') + datatype + '/' + filename
+    else:
+        path = fp('10k_images/') + filename
+    
+    im = Image.open(path).convert('RGB')
+    arr = np.asarray(im)
+    plt.imshow(arr, interpolation='nearest')
+    plt.show()
+
 # sample call
 # display_image(get_filename(8, 'att'), 'att')
 
@@ -69,9 +82,14 @@ def kaggle_output(outputs):
     kaggle_output = np.vstack([test_filenames,outputs]).transpose()
     print kaggle_output
     np.savetxt("../kaggle_output.csv", kaggle_output, delimiter=",", header="ID,Category", comments='', fmt="%s")
+    
+
+def get_pca(data, count = 50):
+    pca = PCA(n_components = count)
+    return pca.fit_transform(data)
 
 
-# In[6]:
+# In[16]:
 
 get_ipython().system(u'ipython nbconvert --to=python library.ipynb')
 
