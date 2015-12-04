@@ -297,7 +297,7 @@ ID,Category
 0295.jpg,chapel
 0296.jpg,park
 0297.jpg,bowling_alley
-0298.jpg,conference_room
+0298.jpg,computer_room
 0299.jpg,nightclub
 0300.jpg,fountain
 0301.jpg,construction_site
@@ -306,7 +306,7 @@ ID,Category
 0304.jpg,palace
 0305.jpg,snowfield
 0306.jpg,dining_room
-0307.jpg,valley
+0307.jpg,canyon
 0308.jpg,aquatic_theater
 0309.jpg,coffee_shop
 0310.jpg,cliff
@@ -381,7 +381,7 @@ ID,Category
 0379.jpg,oasis
 0380.jpg,football_field
 0381.jpg,corridor
-0382.jpg,building_facade
+0382.jpg,manhole
 0383.jpg,yard
 0384.jpg,football_field
 0385.jpg,gas_station
@@ -482,7 +482,7 @@ ID,Category
 0480.jpg,office_cubicles
 0481.jpg,rubble
 0482.jpg,aquatic_theater
-0483.jpg,parking_lot
+0483.jpg,campsite
 0484.jpg,picnic_area
 0485.jpg,city
 0486.jpg,bridge
@@ -522,7 +522,7 @@ ID,Category
 0520.jpg,elevator_lobby
 0521.jpg,gas_station
 0522.jpg,gorge
-0523.jpg,construction_site
+0523.jpg,windmill
 0524.jpg,mine
 0525.jpg,aquarium
 0526.jpg,vineyard
@@ -551,7 +551,7 @@ ID,Category
 0549.jpg,downtown
 0550.jpg,junk_pile
 0551.jpg,coffee_shop
-0552.jpg,sawmill
+0552.jpg,archive
 0553.jpg,art_studio
 0554.jpg,gas_station
 0555.jpg,bus_interior
@@ -642,7 +642,7 @@ ID,Category
 0640.jpg,food_court
 0641.jpg,rock_arch
 0642.jpg,ranch
-0643.jpg,conference_room
+0643.jpg,physics_laboratory
 0644.jpg,living_room
 0645.jpg,shower
 0646.jpg,gift_shop
@@ -668,7 +668,7 @@ ID,Category
 0666.jpg,dentists_office
 0667.jpg,computer_room
 0668.jpg,roof
-0669.jpg,rubble
+0669.jpg,dam
 0670.jpg,office_building
 0671.jpg,dam
 0672.jpg,railway_yard
@@ -714,7 +714,7 @@ ID,Category
 0712.jpg,plaza
 0713.jpg,campsite
 0714.jpg,farm
-0715.jpg,cafeteria
+0715.jpg,lab_classroom
 0716.jpg,seawall
 0717.jpg,campsite
 0718.jpg,bar
@@ -861,7 +861,7 @@ ID,Category
 0859.jpg,junk_pile
 0860.jpg,city
 0861.jpg,pond
-0862.jpg,rainforest
+0862.jpg,creek
 0863.jpg,orchard
 0864.jpg,cafeteria
 0865.jpg,crosswalk
@@ -956,7 +956,7 @@ ID,Category
 0954.jpg,glacier
 0955.jpg,football_field
 0956.jpg,dentists_office
-0957.jpg,sushi_bar
+0957.jpg,bar
 0958.jpg,shopfront
 0959.jpg,ski_resort
 0960.jpg,fastfood_restaurant
@@ -975,7 +975,7 @@ ID,Category
 0973.jpg,elevator_lobby
 0974.jpg,cottage
 0975.jpg,bus_interior
-0976.jpg,closet
+0976.jpg,elevator_lobby
 0977.jpg,corridor
 0978.jpg,bedroom
 0979.jpg,crosswalk
